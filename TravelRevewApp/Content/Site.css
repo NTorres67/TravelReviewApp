@@ -22,3 +22,48 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/** Home Page navbar*/
+
+div.navbar-collapse.collapse {
+    color: red;
+    width: 100%;
+    height: 5px;
+}
+
+div.jumbotron {
+    background-image: url('../images/home_index/ClevelandSkyLine.jpg');
+    background-size: contain;
+}
+
+h1#main-index {
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+h2#main-index {
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+div#main-index-thumbnail {
+    background-color: #000099;
+    background-position: center center;
+    background-size: contain;
+    text-align: center;
+    color: #a3ff00;
+}
+
+/*div#directors.thumbnail {
+    background-color: #000099;
+    background-position: center center;
+    background-size: contain;
+    text-align: center;
+    color: #a3ff00;
+}*/
+   

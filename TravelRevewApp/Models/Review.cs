@@ -14,12 +14,13 @@ namespace TravelRevewApp.Models
         [Display(Name = "Location or Organization")]
         public string Name { get; set; }
         [Display(Name = "Arrival Date")]
-        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy")]
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime Arrive { get; set; }
         [Display(Name = "Departure Date")]
-        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy")]
+        [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime Depart { get; set; }
         public bool Sunny { get; set; }
+        [Display(Name = "Rating: Bad, Good, Excellent")]
         public string Rating { get; set; }
         public string Comments { get; set; }
         
