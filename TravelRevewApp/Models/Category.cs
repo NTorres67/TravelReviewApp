@@ -10,6 +10,7 @@ namespace TravelRevewApp.Models
     {
         [Key]
         public int CategoryID { get; set; }
+        [Display(Name = "Category Type")]
         public string Type { get; set; }
 
         // Navigation Property

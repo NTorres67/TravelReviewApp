@@ -3,67 +3,96 @@
 @{
     ViewBag.Title = "Details";
 }
+<div class="row:">
+    <div class="col-md-8">
+        <h2>Review Details</h2>
+    </div>
+</div>
 
-<h2>Details</h2>
+<div class="row">
+    <div class="col-md-8">
+        <p>
+            @Html.DisplayNameFor(model => model.Name) :  @Html.DisplayFor(model => model.Name)
+        </p>
+        <p>
+            @Html.DisplayNameFor(model => model.Category.Type) :   @Html.DisplayFor(model => model.Category.Type)
+        </p>
+        <p>
+            @Html.DisplayNameFor(model => model.Arrive) : @Html.DisplayFor(model => model.Arrive)
+        </p>
+        <p>
+            @Html.DisplayNameFor(model => model.Depart) : @Html.DisplayFor(model => model.Depart)
+        </p>
+        <p>
+            @Html.DisplayNameFor(model => model.Sunny) : @Html.DisplayFor(model => model.Sunny)
+        </p>
+        <p>
+            @Html.DisplayNameFor(model => model.Rating) :   @Html.DisplayFor(model => model.Rating)
+        </p>
+        <p>
+            @Html.DisplayNameFor(model => model.Comments) :  @Html.DisplayFor(model => model.Comments)
+        </p>
+    </div>
+</div>
 
 <div>
-    <h4>Review</h4>
+    @*<h4>Review</h4>*@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Category.Type)
+            @*@Html.DisplayNameFor(model => model.Category.Type)*@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Category.Type)
+            @*@Html.DisplayFor(model => model.Category.Type)*@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Name)
+            @*@Html.DisplayNameFor(model => model.Name)*@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Name)
+            @*@Html.DisplayFor(model => model.Name)*@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Arrive)
+            @*@Html.DisplayNameFor(model => model.Arrive)*@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Arrive)
+            @*@Html.DisplayFor(model => model.Arrive)*@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Depart)
+            @*@Html.DisplayNameFor(model => model.Depart)*@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Depart)
+            @*@Html.DisplayNameFor(model => model.Depart)*@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Sunny)
+            @*@Html.DisplayNameFor(model => model.Sunny)*@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Sunny)
+            @*@Html.DisplayFor(model => model.Sunny)*@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Rating)
+            @*@Html.DisplayNameFor(model => model.Rating)*@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Rating)
+            @*@Html.DisplayFor(model => model.Rating)*@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Comments)
+            @*@Html.DisplayNameFor(model => model.Comments)*@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Comments)
+            @*@Html.DisplayFor(model => model.Comments)*@
         </dd>
 
     </dl>
