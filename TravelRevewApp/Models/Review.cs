@@ -20,7 +20,7 @@ namespace TravelRevewApp.Models
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
         public DateTime Depart { get; set; }
         public bool Sunny { get; set; }
-        [Display(Name = "Rate (1-5)")]
+        [Display(Name = "Rating: (1-5)")]
         public string Rating { get; set; }
         public string Comments { get; set; }
         

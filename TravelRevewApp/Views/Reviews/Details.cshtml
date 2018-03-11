@@ -3,101 +3,53 @@
 @{
     ViewBag.Title = "Details";
 }
-<div class="row:">
-    <div class="col-md-8">
+<div class="row">
+    <div class="col-sm-4 col-md-4"></div>
+    <div class="col-sm-4 col-md-4">
         <h2>Review Details</h2>
     </div>
+    <div class="col-sm-4 col-md-4"></div>
 </div>
 
-<div class="row details-index">
-    <div class="col-md-8">
+<div class="row">
+    <div class="col-sm-2 col-md-2"></div>
+    <div class="col-sm-8 col-md-8">
+        <div class="thumbnail details-index">
+            <img src="~/images/reviews_details/clouds.jpg" class="img-thumbnail" alt="Thumb3" width="400" height="300" />
+            <div class="caption details">
+                <h2>
+                    @*@Html.DisplayNameFor(model => model.Name) :*@  @Html.DisplayFor(model => model.Name)
+                </h2>
+                <p>
+                    @*@Html.DisplayNameFor(model => model.Category.Type) :*@   @Html.DisplayFor(model => model.Category.Type)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.Arrive) : @Html.DisplayFor(model => model.Arrive)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.Depart) : @Html.DisplayFor(model => model.Depart)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.Sunny) : @Html.DisplayFor(model => model.Sunny)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.Rating) :   @Html.DisplayFor(model => model.Rating)
+                </p>
+                <p>
+                    @Html.DisplayNameFor(model => model.Comments) :  @Html.DisplayFor(model => model.Comments)
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2 col-md-2"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
         <p>
-            @Html.DisplayNameFor(model => model.Name) :  @Html.DisplayFor(model => model.Name)
-        </p>
-        <p>
-            @Html.DisplayNameFor(model => model.Category.Type) :   @Html.DisplayFor(model => model.Category.Type)
-        </p>
-        <p>
-            @Html.DisplayNameFor(model => model.Arrive) : @Html.DisplayFor(model => model.Arrive)
-        </p>
-        <p>
-            @Html.DisplayNameFor(model => model.Depart) : @Html.DisplayFor(model => model.Depart)
-        </p>
-        <p>
-            @Html.DisplayNameFor(model => model.Sunny) : @Html.DisplayFor(model => model.Sunny)
-        </p>
-        <p>
-            @Html.DisplayNameFor(model => model.Rating) :   @Html.DisplayFor(model => model.Rating)
-        </p>
-        <p>
-            @Html.DisplayNameFor(model => model.Comments) :  @Html.DisplayFor(model => model.Comments)
+            @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
+            @Html.ActionLink("Back to List", "Index")
         </p>
     </div>
 </div>
 
-<div>
-    @*<h4>Review</h4>*@
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @*@Html.DisplayNameFor(model => model.Category.Type)*@
-        </dt>
-
-        <dd>
-            @*@Html.DisplayFor(model => model.Category.Type)*@
-        </dd>
-
-        <dt>
-            @*@Html.DisplayNameFor(model => model.Name)*@
-        </dt>
-
-        <dd>
-            @*@Html.DisplayFor(model => model.Name)*@
-        </dd>
-
-        <dt>
-            @*@Html.DisplayNameFor(model => model.Arrive)*@
-        </dt>
-
-        <dd>
-            @*@Html.DisplayFor(model => model.Arrive)*@
-        </dd>
-
-        <dt>
-            @*@Html.DisplayNameFor(model => model.Depart)*@
-        </dt>
-
-        <dd>
-            @*@Html.DisplayNameFor(model => model.Depart)*@
-        </dd>
-
-        <dt>
-            @*@Html.DisplayNameFor(model => model.Sunny)*@
-        </dt>
-
-        <dd>
-            @*@Html.DisplayFor(model => model.Sunny)*@
-        </dd>
-
-        <dt>
-            @*@Html.DisplayNameFor(model => model.Rating)*@
-        </dt>
-
-        <dd>
-            @*@Html.DisplayFor(model => model.Rating)*@
-        </dd>
-
-        <dt>
-            @*@Html.DisplayNameFor(model => model.Comments)*@
-        </dt>
-
-        <dd>
-            @*@Html.DisplayFor(model => model.Comments)*@
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ReviewID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
