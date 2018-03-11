@@ -43,9 +43,9 @@
                 <div class="item">
                     <div class="caption-transbox" id="travel-index">
                         <h2>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h2>
-                        <p>@Html.DisplayNameFor(model => model.Category.Type) : @Html.DisplayFor(modelItem => item.Category.Type)</p>
-                        <p>@Html.DisplayNameFor(model => model.Rating) : @Html.DisplayFor(modelItem => item.Rating)</p>
-                        <p>@Html.ActionLink("Details", "Details", new { id = item.ReviewID })</p>
+                        <h3>@Html.DisplayNameFor(model => model.Category.Type) : @Html.DisplayFor(modelItem => item.Category.Type)</h3>
+                        <h3>@Html.DisplayNameFor(model => model.Rating) : @Html.DisplayFor(modelItem => item.Rating)</h3>
+                        <h3>@Html.ActionLink("Details", "Details", new { id = item.ReviewID })</h3>
                     </div>
                 </div>
                 }

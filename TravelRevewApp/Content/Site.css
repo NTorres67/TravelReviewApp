@@ -1,4 +1,5 @@
 ﻿body {
+    background-color:#ff3300;
     padding-top: 50px;
     padding-bottom: 20px;
 }
@@ -101,4 +102,17 @@ div#travel-index.caption-transbox {
     opacity: 0.6;
     filter: alpha(opacity=60); /*transform IE8 and earlier*/
     font-weight:bold;
+}
+
+/* details page*/
+div.details-index {
+    background-image: url('../images/reviews_details/clouds.jpg');
+    height:400px;
+    margin-top: 5%;
+    background-position: center center;
+    background-size: contain;
+}
+
+div.row.details-index {
+    padding-left:40%
 }

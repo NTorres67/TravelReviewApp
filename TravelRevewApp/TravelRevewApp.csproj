@@ -178,6 +178,7 @@
     <Content Include="images\home_index\ClevelandSkyLine.jpg" />
     <Content Include="images\home_index\DSCN0440.JPG" />
     <Content Include="images\home_index\Mix 022.jpg" />
+    <Content Include="images\reviews_details\clouds.jpg" />
     <Content Include="images\reviews_index\My Post.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
