@@ -3,14 +3,11 @@
 @{
     ViewBag.Title = "Index";
 }
-<div class="row">
+<div class="row review-index">
     <div class="col-md-12">
-        <h2>Index</h2>
-    </div>
-</div>
-
-<div class="row">
-    <div class="col-md-12">
+        <h2>
+            Your Opinion Count
+        </h2>
         <p>
             @Html.ActionLink("Create New", "Create")
         </p>
@@ -24,28 +21,34 @@
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" class="active"></li>
                 @foreach (var item in Model)
-        {
-            <li data-target="#myCarousel"></li>
-}
+                {
+                     <li data-target="#myCarousel"></li>
+                }
             </ol>
             <!-- Wrapper for sides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <p>
-                        @Html.ActionLink("Create New", "Create")
-                    </p>
+                    <div class="caption-transbox" id="travel-index">
+                        <h2>
+                            Create A New Review
+                        </h2>
+                        <p>
+                            @Html.ActionLink("Create New", "Create")
+                        </p>
+                    </div>
+                    
                 </div>
                 @foreach (var item in Model)
-        {
-            <div class="item">
-                <div class="caption-transbox" id="travel-index">
-                    <h3>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h3>
-                    <p>@Html.DisplayNameFor(model => model.Category.Type) : @Html.DisplayFor(modelItem => item.Category.Type)</p>
-                    <p>@Html.DisplayNameFor(model => model.Rating) :  @Html.DisplayNameFor(model => model.Rating)</p>
-                    <p>@Html.ActionLink("Details", "Details", new { id = item.ReviewID })</p>
+                {
+                <div class="item">
+                    <div class="caption-transbox" id="travel-index">
+                        <h2>@Html.DisplayNameFor(model => model.Name) : @Html.DisplayFor(modelItem => item.Name)</h2>
+                        <p>@Html.DisplayNameFor(model => model.Category.Type) : @Html.DisplayFor(modelItem => item.Category.Type)</p>
+                        <p>@Html.DisplayNameFor(model => model.Rating) : @Html.DisplayFor(modelItem => item.Rating)</p>
+                        <p>@Html.ActionLink("Details", "Details", new { id = item.ReviewID })</p>
+                    </div>
                 </div>
-            </div>
-}
+                }
             </div>
             <!-- Left and right controls-->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev">
